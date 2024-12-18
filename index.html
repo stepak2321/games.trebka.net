@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trebka Games</title>
+    <link rel="stylesheet" href="css/index.css"> <!-- Odkaz na externí CSS soubor -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <canvas id="animationCanvas"></canvas>
+        <h1>Trebka Games</h1>
+        <button id="theme-toggle">
+            <div class="fas fa-sun"></div>
+        </button>
+    </header>
+
+    <!-- Kontejner pro tlačítka -->
+    <div id="button-container">
+        <button id="circle-playground" onclick="redirectToCirclePlayground()">Circle Playground</button>
+        <button id="rock-paper-scissors" onclick="openRockPaperScissors()">Rock-Paper-Scissors</button> <!-- Druhé tlačítko -->
+    </div>
+
+    <script>
+        function redirectToCirclePlayground() {
+            window.location.href = "https://circle-playground.trebka.net/"; // Přesměrování na Circle Playground
+        }
+
+        function openRockPaperScissors() {
+            window.location.href = "Rock-Paper-Scissors.html"; // Otevření nové HTML stránky
+        }
+    </script>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
